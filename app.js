@@ -6,7 +6,7 @@ const express = require("express");
 const viewRouter = require("./routes/viewRoutes");
 const viewsController = require("./controllers/viewsController");
 const app = express();
-const port = 3005;
+const port = process.env.PORT || 3005;
 const bodyParser = require("body-parser");
 
 // setup pug engine
